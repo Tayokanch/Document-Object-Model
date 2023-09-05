@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listener 2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgba(125, 110, 223, 0.648);
+            text-align: center;
+            color: #ffffff;
+        }
+
+        h1{
+            margin: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            
+        }
+
+        .boxes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+        }
+        .reveal-btn{
+            padding: 20px;
+            background-color: rgba(125, 110, 223, 0.648);
+        
+        }
+
+
+        .boxes{
+            color: #ffffff;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+/* Hidden content */
+        .hidden-content{
+            display: none;
+            width: 500px;            
+        }
+      
+
+
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">Event Listeners</h1>
+
+    <div class="container">
+        <button class="reveal-btn boxes">Reveal More</button>
+
+        <div class="hidden-content boxes">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reprehenderit, nulla numquam nihil nisi et eveniet cumque facilis laborum animi. Accusamus, cumque tempora totam magnam voluptate deleniti culpa dolor eveniet!
+            Expedita nihil itaque dignissimos accusantium. Fugiat id, unde debitis rem dolore harum sed ut asperiores? Corrupti sequi perferendis facilis aspernatur, id incidunt enim ratione neque voluptates autem molestias assumenda quia.
+            Labore qui, facilis eveniet explicabo placeat animi dicta voluptate eum molestias, ex autem porro ut magni, repellendus enim. Dolorem voluptas, officia recusandae tempore distinctio praesentium libero vel nemo excepturi molestias?
+        </div>
+    </div>
+    <script src="event2.js"></script>
+</body>
+</html>

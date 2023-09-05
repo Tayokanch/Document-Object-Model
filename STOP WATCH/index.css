@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: url(chicago-street-urban-cityscape-wallpaper-preview.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 60%;
+    height: 250px;
+   /*  background-color: #ffffffd4; */
+   background-color:#d3d91631;
+    border-radius: 30px;
+    box-shadow: 0 0 3px #000000;
+    text-align: center;
+
+}
+
+#timer{
+    color:rgb(29, 0, 87);
+    font-family: 'Bodoni Moda';
+    display: block;
+    font-size: 3.5rem;
+    padding: 35px;
+    text-shadow: 1px 1px 1px #919191,
+                 1px 2px 1px #919191,
+                 1px 3px 1px #919191,
+                 1px 4px 1px #919191,
+                 1px 5px 1px #919191,
+                 1px 6px 1px #919191,
+                 1px 7px 1px #919191,
+                 1px 8px 1px #919191,
+                 1px 9px 1px #919191,
+                 1px 10px 1px #919191
+}
+
+.buttons{
+    text-align: center;
+}
+/* spacing Icons */
+button{
+    margin: 0 10px;
+    border: none;
+}
+
+/* styling Icons */
+button i{
+    font-size: 2rem;
+    padding: 10px;
+    color: #fff;
+}
+
+#play{
+    background-color: #008000;
+}
+#pause{
+    background-color: orange;
+}
+
+#reset{
+    background-color: red;
+}

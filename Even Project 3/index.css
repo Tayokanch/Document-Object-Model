@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
+    background: url(oak-grove-summer_1398-331.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* style button */
+#open-btn{
+    position: absolute;
+    top: 70%;
+    left:10%;
+    width: 350px;
+    height: 80px;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius:10px ;
+    padding: 5px;
+    box-shadow: 0 0 20px black;
+    transition: .5s;
+    cursor: pointer;
+    outline: none;
+}
+
+#open-btn:hover{
+    background-color: #fff;
+    color: black;
+    transform:scale(1.1);
+    transition: 0.5s;
+    
+}
+
+#modal-container{
+    position: fixed;
+/*  top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    /* The width and height properies helps the container to come to the middle
+    after giving it a position fixed */
+    z-index: 1;
+    background-color: rgba(0,0,0, .2);
+}
+
+/* Giving the modal-container a position - fixed , makes everything inside of it
+    to be fixed at top of the body because the body has a property of  position relative
+    and giving it a width and height of 100% makes the item to drop to the center
+ */
+
+
+
+/* styling modal container */
+#modal{
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Another way to center a content */
+    width: 200px;
+    height: 100px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: animatemodal;
+    animation-duration: 0.4s;
+}
+/* styling parent of modal container */
+
+
+
+#close-btn{
+    font-size: 3rem;
+    cursor: pointer;
+    color: #ff0000;
+}
+
+
+/* Modal Animation */
+@keyframes animatemodal{
+    from{
+        top:-300px;
+        opacity: 0;
+    }
+
+    to{
+        top:50%;
+        opacity: 1;
+
+    }
+}

@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: url(pexels-photo-9463157.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#add-task-contianer{
+    display: flex;
+    width: 350px;
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.707);
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+    margin-bottom: 20px;
+}
+
+input{
+    flex: 5;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 7px;
+    outline: none;
+    background: transparent;
+}
+/* Styling Button */
+#add-task{
+    flex: 1;
+    font-size: 1.2rem;
+    padding: 7px;
+    cursor: pointer;
+    background-color: white;
+    color: #008000;
+    border: #008000 solid 2px;
+    border-radius: 10px;
+}
+
+#add-task:hover{
+    background-color: green;
+    color: white;
+}
+
+/* Styling the erazer button */
+#erazer{
+    flex: 1;
+    font-size: 1.2rem;
+    padding: 7px;
+    border-radius: 10px;
+    color: red;
+    background-color: white;
+    border: red solid 2px;
+    margin-left: 5px;
+}
+
+#erazer:hover{
+    background-color: red;
+    color: white;
+}
+
+
+
+
+
+
+/* This is the empty container / B */
+#task-container{
+    width: 100%;
+    background-color: aquamarine;
+}
+
+/* styling for task which was added from JS */
+
+.task{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.task li{
+    list-style: none;
+   flex: 4; /* take a space of 4times compare to other elements */
+    padding: 5px;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.task button{
+    flex: 1; /* take a space of 1time */
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.task .checkTask{
+    color: orange;
+    margin-right: 5px;
+    border: solid 3px orange;
+    font-size: 1.5rem;
+}
+.task .checkTask:hover{
+    background-color: orange;
+    color: white;
+}
+.task .delete{
+    color: red;
+    border: solid 3px red;
+    font-size: 1.5rem;
+}
+
+.task .delete:hover{
+    background-color: red;
+    color: white;
+}

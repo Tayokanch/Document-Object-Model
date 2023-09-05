@@ -1,0 +1,85 @@
+<!-- 
+* DOCUMENT : This is the root node of the DOM Tree use in manipulating all of the content
+- The DOCUMENT node has one childNode which is the HTML
+
+*HTML: The HTML is the parentNode of the HEAD and BODY Element
+- The HEAD & BODY Element are called siblings because they are on the same level in the DOM Tree
+
+*HEAD ELEMENT: This has one childNode which is the TITLE Element
+- Any text or content inside the TITLE Element are the childNode of TITLe Element while Title Element itself is the PARENT NODE
+
+*BODY ELEMENT: Body element is the ParentNode of any Elements inside of it e.g H1, Div and any other element
+- Any text or content inside  the div or any other elements are the childNode of the element
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation of Dom: Part 1</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgba(20, 102, 224, 0.806);
+            height: 100vh;
+           display: flex;
+         
+           justify-content: center;
+           align-items: center;
+            text-align: center;
+        }
+
+        .container{
+            width:min(100% 500px);
+            border: 3px solid white;
+            border-radius: 5px;
+        }
+        h1{
+            margin-top: 10px;
+             color: #ffffff;
+             text-align: center;
+             font-family: sans-serif;
+        }
+        .container ul{
+            list-style-type: none;
+            margin: 20px 20px 20px 20px;
+            
+           
+        }
+
+        .container ul li{
+            display: block;
+            background-color: #ffffff;
+            margin-bottom: 4px;
+            padding: 8px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+   
+ </head>
+ <body>
+    <div class="container">
+        <h1 id="main-heading">Favourite Movie Franchise</h1>
+        <ul>
+            <li class="list-items">The Matrix</li>
+            <li class="list-items">Star Wars</li>
+            <li class="list-items">Harry Potter</li>
+            <li class="list-items">Lord of the Rings</li>
+            <li class="list-items">Marvel</li>
+        </ul>
+    </div>
+
+    <script src="dom.js"></script>
+    <script src="dom2.js"></script>
+    <script src="dom3.js"></script>
+
+
+ </body>
+ </html>
